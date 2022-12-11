@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div>
+    <form action="javascript: pegarD()" method="post">
+      <label for="empresa">Empresa</label>
+      <input type="text" name="empresa" id="empresa" min='4' pattern="[SA]">
+
+      <label for="fund">Ano de fundação</label>
+      <input type="date" name="fund" id="fund" min='2000-01-01' required>
+
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" title='aaa@a.com é válido'>
+
+      <label for="descrit">Descrição</label>
+      <textarea name="descrit" id="descrit" cols="30" rows="10" maxlength=".{50,}">
+   </textarea>
+
+      <label for="cargo">Equipe selecionada</label>
+      <select name="cargo" id="cargo">
+        <option value="cargos">-</option>
+        <option value="vendas">Vendas</option>
+        <option value="markteking">Markteking</option>
+        <option value="aplicativos">Aplicativos</option>
+      </select>
+
+      <input type="submit" name='btn' id='btn' onclick="pegarD()">
+    </form>
+  </div>
+  <script src="script.js"></script>
+
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>
